@@ -1,4 +1,11 @@
 #!/usr/bin/env php
 <?php
 
-echo "php bin/brain-games.php\r\nWelcome to the Brain Games!";
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use BrainGames\Cli;
+
+echo "php bin/brain-games.php\n";
+echo "Welcome to the Brain Games!\n";
+
+Cli\askForName();
