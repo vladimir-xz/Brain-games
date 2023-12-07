@@ -12,5 +12,9 @@
             "email": "vladimir156xz@gmail.com"
         }
     ],
-    "require": {}
+    "bin": [
+        "bin/brain-games"
+    ],
+    "require": {},
+    "license": "proprietary"
 }
