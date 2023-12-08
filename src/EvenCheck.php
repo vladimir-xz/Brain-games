@@ -23,9 +23,11 @@ function askIfEven($playersName)
             $amountOfCorrectAnswers += 1;
         } else {
             line("'%s' is wrong answer ;(. Correct answer was '%s'.", $answer, $correctAnswer);
-            line("Lets try it again, %s!", $playersName);
-            $amountOfCorrectAnswers = 0;
+            line("Lets try it again, %s!", ucfirst($playersName));
+            break;
         }
     }
-    line("Congratulations, %s!", $playersName);
+    if ($amountOfCorrectAnswers === 3) {
+        line("Congratulations, %s!", ucfirst($playersName));
+    }
 }
