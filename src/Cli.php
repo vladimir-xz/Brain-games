@@ -8,6 +8,6 @@ use function cli\prompt;
 function askForName()
 {
     $name = prompt('May I have your name?');
-    line("Hello, %s!", $name);
+    line("Hello, %s!", ucfirst($name));
     return $name;
 }
