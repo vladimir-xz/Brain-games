@@ -1,0 +1,23 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use BrainGames\Cli;
+use BrainGames\CalculateGame;
+use BrainGames\Interaction;
+
+$gameType = "calculator";
+$playerName = Cli\askForName();
+$playersScore = Interaction\gameBegining($gameType);
+$ifContinue = true;
+while ($ifContinue && $playersScore < 3) {
+    $equationAndResult = CalculateGame\equation();
+    $correctAnswer = $equationAndResult["Correct"];
+    $question = $equationAndResult["Question"];
+    $answer = Interaction\questionAndAnswer($question);
+    $gameResult = Interaction\checkIfCorrect($answer, $correctAnswer, $playersScore);
+    $ifContinue = $gameResult["Status"];
+    $playersScore = $gameResult["Score"];
+}
+Interaction\endGame($playersScore, $playerName, $answer, $correctAnswer);
