@@ -10,7 +10,8 @@ use BrainGames\Interaction;
 $gameType = "evengame";
 $playerName = Cli\askForName();
 $ifContinue = true;
-$playersScore = Interaction\gameBegining($gameType);
+$playersScore = 0;
+Interaction\gameBegining($gameType);
 while ($ifContinue && $playersScore < 3) {
     $gameBody = Even\askIfEven($playerName);
     $correctAnswer = $gameBody["Correct"];

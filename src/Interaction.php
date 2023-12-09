@@ -15,7 +15,6 @@ function gameBegining($gameType)
             line("What is the result of the expression?");
             break;
     }
-    return 0;
 }
 
 function questionAndAnswer($question)

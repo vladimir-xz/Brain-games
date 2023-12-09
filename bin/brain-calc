@@ -9,8 +9,9 @@ use BrainGames\Interaction;
 
 $gameType = "calculator";
 $playerName = Cli\askForName();
-$playersScore = Interaction\gameBegining($gameType);
+$playersScore = 0;
 $ifContinue = true;
+Interaction\gameBegining($gameType);
 while ($ifContinue && $playersScore < 3) {
     $equationAndResult = Calculate\equation();
     $correctAnswer = $equationAndResult["Correct"];
