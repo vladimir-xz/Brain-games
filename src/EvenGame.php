@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\EvenCheck;
+namespace BrainGames\EvenGame;
 
 use function cli\line;
 use function cli\prompt;
@@ -16,8 +16,8 @@ function askIfEven($playersName)
         if ($ifRandomIsEven === true) {
             $correctAnswer = "yes";
         }
-        $answer = prompt("Question: {$randomNumber}");
-        line("Your answer is %s!", $answer);
+        line("Question: %s", $randomNumber);
+        $answer = prompt("Your answer is ");
         if ($correctAnswer === strtolower($answer)) {
             echo "Correct!\n";
             $amountOfCorrectAnswers += 1;

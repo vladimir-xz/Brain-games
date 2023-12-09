@@ -4,7 +4,7 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use BrainGames\Cli;
-use BrainGames\EvenCheck;
+use BrainGames\EvenGame;
 
 $playerName = Cli\askForName();
-EvenCheck\askIfEven($playerName);
+EvenGame\askIfEven($playerName);
