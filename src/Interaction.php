@@ -9,7 +9,7 @@ function gameBegining($gameType)
 {
     switch ($gameType) {
         case 'evengame':
-            line("Answer \"yes\" if the number is even, otherwise answer \"no\"\n");
+            line("Answer \"yes\" if the number is even, otherwise answer \"no\"");
             break;
         case 'calculator':
             line("What is the result of the expression?");
