@@ -7,8 +7,8 @@
         },
         "files": [
             "src/Cli.php",
-            "src/EvenCheck.php",
-            "src/CalculateGame.php",
+            "src/Games/EvenGame.php",
+            "src/Games/CalculateGame.php",
             "src/Interaction.php"
         ]
     },

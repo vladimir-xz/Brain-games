@@ -4,7 +4,7 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use BrainGames\Cli;
-use BrainGames\CalculateGame;
+use BrainGames\Games\Calculate;
 use BrainGames\Interaction;
 
 $gameType = "calculator";
@@ -12,7 +12,7 @@ $playerName = Cli\askForName();
 $playersScore = Interaction\gameBegining($gameType);
 $ifContinue = true;
 while ($ifContinue && $playersScore < 3) {
-    $equationAndResult = CalculateGame\equation();
+    $equationAndResult = Calculate\equation();
     $correctAnswer = $equationAndResult["Correct"];
     $question = $equationAndResult["Question"];
     $answer = Interaction\questionAndAnswer($question);

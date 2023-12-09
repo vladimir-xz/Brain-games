@@ -4,7 +4,7 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use BrainGames\Cli;
-use BrainGames\EvenGame;
+use BrainGames\Games\Even;
 use BrainGames\Interaction;
 
 $gameType = "evengame";
@@ -12,7 +12,7 @@ $playerName = Cli\askForName();
 $ifContinue = true;
 $playersScore = Interaction\gameBegining($gameType);
 while ($ifContinue && $playersScore < 3) {
-    $gameBody = EvenGame\askIfEven($playerName);
+    $gameBody = Even\askIfEven($playerName);
     $correctAnswer = $gameBody["Correct"];
     $Number = $gameBody["Number"];
     $answer = Interaction\questionAndAnswer($Number);

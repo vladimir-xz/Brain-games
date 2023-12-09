@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\CalculateGame;
+namespace BrainGames\Games\Calculate;
 
 function equation()
 {
