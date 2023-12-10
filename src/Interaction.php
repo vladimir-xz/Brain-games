@@ -5,6 +5,11 @@ namespace BrainGames\Interaction;
 use function cli\line;
 use function cli\prompt;
 
+function setScore()
+{
+    return [0, true];
+}
+
 function gameBegining($gameType)
 {
     switch ($gameType) {
