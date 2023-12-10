@@ -55,6 +55,6 @@ function endGame($gamePoints, $playerName, $answer, $correctAnswer)
         line("Congratulations, %s!", ucfirst($playerName));
     } else {
         line("'%s' is wrong answer ;(. Correct answer was '%s'.", $answer, $correctAnswer);
-        line("Let's try it again, %s!", ucfirst($playerName));
+        line("Let's try again, %s!", ucfirst($playerName));
     }
 }
