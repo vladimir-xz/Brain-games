@@ -8,11 +8,12 @@ function getQuestionAndDivisor()
     $secondNumber = rand(1, 100);
     $commonDivisor = 1;
     $numbers = [$firstNumber, $secondNumber];
+    $question = implode(' ', $numbers);
     sort($numbers);
     for ($i = 1; $i <= $numbers[0]; $i += $commonDivisor) {
         if ($firstNumber % $i === 0 && $secondNumber % $i === 0) {
             $commonDivisor = $i;
         }
     }
-    return ["Question" => "{$firstNumber} {$secondNumber}", "Correct" => $commonDivisor];
+    return ["Question" => $question, "Correct" => $commonDivisor];
 }
