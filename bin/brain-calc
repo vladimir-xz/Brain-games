@@ -9,7 +9,7 @@ use BrainGames\Interaction;
 
 $gameType = "Calculate";
 $playerName = Cli\askForName();
-[$playersScore, $ifContinue] = Interaction\setScore();
+[$playersScore, $ifContinue] = Interaction\setInitailData();
 Interaction\startGame($gameType);
 while ($ifContinue && $playersScore < 3) {
     $questionAndCorrectAnswer = Calculate\getEquationAndAnswer();

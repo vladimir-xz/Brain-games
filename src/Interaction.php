@@ -5,7 +5,7 @@ namespace BrainGames\Interaction;
 use function cli\line;
 use function cli\prompt;
 
-function setScore()
+function setInitailData()
 {
     return [0, true];
 }
