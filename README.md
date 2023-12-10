@@ -2,6 +2,38 @@
 [![Actions Status](https://github.com/vladimr-xz/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/vladimr-xz/php-project-45/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/202d3101c6c9f93522f9/maintainability)](https://codeclimate.com/github/vladimr-xz/php-project-45/maintainability)
 
+<h1>Brain Games<h1>
+<h3>by Vovan<h3>
+
+<h2>Instruction:<h2>
+<p>Download this git repository, open "php-project-45" directory and type in command line "make install". After that you can play included games.</p>
+
+<p>Commands to each game:</p>
+<ol>
+<li><em>make brain-games</em></li> <p>(Only greetings).</p>
+<li><em>make brain-even</em></li>
+<li><em>make brain-calc</em></li>
+<li><em>make brain-gcd</em></li>
+<li><em>make brain-progression</em></li>
+<li><em>make brain-prime</em></li>
+</ol>
+
+
+<h2>Description:</h2>
+
+<p>5 games on your choise:</p>
+<ol>
+<li><em>Even number: if the number is even, otherwise answer</em></li>
+<li><em>Calculate: You need to write, what is the result of the expression?</em></li>
+<li><em>Greatest common divisor: Find the greatest common divisor of given numbers</em></li>
+<li><em>Missing number in progression: What number is missing in the progression?</em></li>
+<li><em>Prime number: Answer "yes" if given number is prime. Otherwise answer "no".</em></li>
+</ol>
+<h3>Version:</h3>
+<p>1.0.0</p>
+
+
+
 https://asciinema.org/a/ZouwUVNYbJeL8zEu4r2UsdMH8 - Even
 
 https://asciinema.org/a/6nPNIhLQn5A90mlBUv3sRlEjc - Calculate
