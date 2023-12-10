@@ -4,17 +4,15 @@ namespace BrainGames\Games\Gcd;
 
 function findDivisor()
 {
-    $firstNumber = 5;
-    $secondNumber = 50;
-    $commomDivisors = [];
-    for ($i = 1; $i <= $firstNumber; $i++) {
+    $firstNumber = rand(1, 100);
+    $secondNumber = rand(1, 100);
+    $commomDivisor = 1;
+    $numbers = [$firstNumber, $secondNumber];
+    sort($numbers);
+    for ($i = 1; $i <= $numbers[0]; $i += $commomDivisor) {
         if ($firstNumber % $i === 0 && $secondNumber % $i === 0) {
-            $commomDivisors = $i;
+            $commomDivisor = $i;
         }
     }
-    return ["Question" => "{$firstNumber} {$secondNumber}", "Correct" => $commomDivisors];
+    return ["Question" => "{$firstNumber} {$secondNumber}", "Correct" => $commomDivisor];
 }
-
-$result = findDivisor();
-$correct = $result["Correct"];
-$question = $result["Question"];
