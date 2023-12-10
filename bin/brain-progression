@@ -1,0 +1,23 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use BrainGames\Cli;
+use BrainGames\Games\Progression;
+use BrainGames\Interaction;
+
+$gameType = "Progression";
+$playerName = Cli\askForName();
+[$playersScore, $ifContinue] = Interaction\setScore();
+Interaction\gameBegining($gameType);
+while ($ifContinue && $playersScore < 3) {
+    $gameData = Progression\findMissingNumber();
+    $correctAnswer = $gameData["Correct"];
+    $question = $gameData["Question"];
+    $answer = Interaction\getAnswer($question);
+    $gameResult = Interaction\checkIfCorrect($answer, $correctAnswer, $playersScore);
+    $ifContinue = $gameResult["Status"];
+    $playersScore = $gameResult["Score"];
+}
+Interaction\endGame($playersScore, $playerName, $answer, $correctAnswer);

@@ -22,6 +22,9 @@ function gameBegining($gameType)
         case 'Gcd':
             line("Find the greatest common divisor of given numbers.");
             break;
+        case 'Progression':
+            line("What number is missing in the progression?");
+            break;
     }
 }
 
