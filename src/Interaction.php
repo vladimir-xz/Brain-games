@@ -14,7 +14,7 @@ function gameBegining($gameType)
 {
     switch ($gameType) {
         case 'Evengame':
-            line("Answer \"yes\" if the number is even, otherwise answer \"no\"");
+            line("Answer \"yes\" if the number is even, otherwise answer \"no\".");
             break;
         case 'Calculate':
             line("What is the result of the expression?");
