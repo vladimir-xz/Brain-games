@@ -5,20 +5,6 @@
 <h1>Brain Games</h1>
 <h3>by Vovan</h3>
 
-<h2>Instruction:</h2>
-<p>Download this git repository, open "php-project-45" directory and type in command line "make install". After that you can play included games.</p>
-
-<p>Commands to each game:</p>
-<ol>
-<ul><li><em>make brain-games</em></li> <p>(Only greetings).</p>
-<li><em>make brain-even</em></li>
-<li><em>make brain-calc</em></li>
-<li><em>make brain-gcd</em></li>
-<li><em>make brain-progression</em></li>
-<li><em>make brain-prime</em></li><ul>
-</ol>
-
-
 <h2>Description:</h2>
 
 <p>5 games on your choise:</p>
@@ -33,7 +19,25 @@
 <p>1.0.0</p>
 
 
+<h3>System Requirements</h3>
+<p>OS: Linux. Processor: 4 hardware CPU threads - Intel® Core™ i5 750 or higher. Memory: 256 Mb RAM. Graphics: Any GPU. </p>
+
+
+<h2>Instruction:</h2>
+<p>Download this git repository, open "php-project-45" directory and type in command line "make install". After that you can play included games.</p>
+
+<p>Commands to each game:</p>
 <ol>
+<ul><li><em>make brain-games</em></li> <p>(Only greetings).</p>
+<li><em>make brain-even</em></li>
+<li><em>make brain-calc</em></li>
+<li><em>make brain-gcd</em></li>
+<li><em>make brain-progression</em></li>
+<li><em>make brain-prime</em></li><ul>
+</ol>
+
+
+<ol> 
 <ul><li><a href="https://asciinema.org/a/ZouwUVNYbJeL8zEu4r2UsdMH8">Even game recording</a>.</li>
 
 <li><a href="https://asciinema.org/a/6nPNIhLQn5A90mlBUv3sRlEjc">Calculate game recording</a>.</li>
