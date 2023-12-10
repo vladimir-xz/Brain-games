@@ -2,8 +2,8 @@
 [![Actions Status](https://github.com/vladimr-xz/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/vladimr-xz/php-project-45/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/202d3101c6c9f93522f9/maintainability)](https://codeclimate.com/github/vladimr-xz/php-project-45/maintainability)
 
-<h1>Brain Games<h1>
-<h3>by Vovan<h3>
+<h1>Brain Games</h1>
+<h3>by Vovan</h3>
 
 <h2>Instruction:<h2>
 <p>Download this git repository, open "php-project-45" directory and type in command line "make install". After that you can play included games.</p>
@@ -33,13 +33,15 @@
 <p>1.0.0</p>
 
 
+<ol>
+<ul><a href="https://asciinema.org/a/ZouwUVNYbJeL8zEu4r2UsdMH8">Even game recording</a>.</ul>
 
-https://asciinema.org/a/ZouwUVNYbJeL8zEu4r2UsdMH8 - Even
+<ul><a href="https://asciinema.org/a/6nPNIhLQn5A90mlBUv3sRlEjc">Calculate game recording</a>.</ul>
 
-https://asciinema.org/a/6nPNIhLQn5A90mlBUv3sRlEjc - Calculate
+<ul><a href="https://asciinema.org/a/G22BJf9UqWAOoi7tWUmEohUxV">Gcd game recording</a>.</ul>
 
-https://asciinema.org/a/G22BJf9UqWAOoi7tWUmEohUxV - Gcd
+<ul><a href="https://asciinema.org/a/GdoWnbhyEeoM2uOuflxkFtRXi">Progression game recording</a>.</ul>
 
-https://asciinema.org/a/GdoWnbhyEeoM2uOuflxkFtRXi - Progression
-
- https://asciinema.org/a/W0jIMRfxlXYk1SVGpismh1vwK - Prime
+<ul><a href="https://asciinema.org/a/W0jIMRfxlXYk1SVGpismh1vwK">Prime game recording</a>.</ul>
+</ol>
+ 
