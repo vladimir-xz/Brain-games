@@ -10,12 +10,12 @@
 
 <p>Commands to each game:</p>
 <ol>
-<li><em>make brain-games</em></li> <p>(Only greetings).</p>
+<ul><li><em>make brain-games</em></li> <p>(Only greetings).</p>
 <li><em>make brain-even</em></li>
 <li><em>make brain-calc</em></li>
 <li><em>make brain-gcd</em></li>
 <li><em>make brain-progression</em></li>
-<li><em>make brain-prime</em></li>
+<li><em>make brain-prime</em></li><ul>
 </ol>
 
 
@@ -34,14 +34,14 @@
 
 
 <ol>
-<ul><a href="https://asciinema.org/a/ZouwUVNYbJeL8zEu4r2UsdMH8">Even game recording</a>.</ul>
+<ul><li><a href="https://asciinema.org/a/ZouwUVNYbJeL8zEu4r2UsdMH8">Even game recording</a>.</li>
 
-<ul><a href="https://asciinema.org/a/6nPNIhLQn5A90mlBUv3sRlEjc">Calculate game recording</a>.</ul>
+<li><a href="https://asciinema.org/a/6nPNIhLQn5A90mlBUv3sRlEjc">Calculate game recording</a>.</li>
 
-<ul><a href="https://asciinema.org/a/G22BJf9UqWAOoi7tWUmEohUxV">Gcd game recording</a>.</ul>
+<li><a href="https://asciinema.org/a/G22BJf9UqWAOoi7tWUmEohUxV">Gcd game recording</a>.</li>
 
-<ul><a href="https://asciinema.org/a/GdoWnbhyEeoM2uOuflxkFtRXi">Progression game recording</a>.</ul>
+<li><a href="https://asciinema.org/a/GdoWnbhyEeoM2uOuflxkFtRXi">Progression game recording</a>.</li>
 
-<ul><a href="https://asciinema.org/a/W0jIMRfxlXYk1SVGpismh1vwK">Prime game recording</a>.</ul>
+<li><a href="https://asciinema.org/a/W0jIMRfxlXYk1SVGpismh1vwK">Prime game recording</a>.</li></ul>
 </ol>
  
