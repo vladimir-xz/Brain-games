@@ -8,6 +8,7 @@ function findMissingNumber()
     $missingNumber = rand(1, $amountOfNumbers);
     $currentNumber = rand(1, 50);
     $addingNumber = rand(1, 10);
+    $progression = [];
     $progression[] = $currentNumber;
     for ($i = 1; $i < $amountOfNumbers; $i++) {
         $currentNumber = $currentNumber + $addingNumber;
