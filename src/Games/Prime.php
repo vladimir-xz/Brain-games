@@ -2,7 +2,7 @@
 
 namespace BrainGames\Games\Prime;
 
-function findIfPrime()
+function getQuestionAndIfPrime()
 {
     $number = rand(2, 100);
     $correctAnswer = "yes";
@@ -10,9 +10,10 @@ function findIfPrime()
     if (in_array($number, $controlGroup, true)) {
         return ["Question" => $number, "Correct" => $correctAnswer];
     }
-    for ($i = 0; $i < count($controlGroup); $i++) {
-        if ($number % $controlGroup[$i] === 0) {
+    foreach ($controlGroup as $controlNumber) {
+        if ($number % $controlNumber === 0) {
             $correctAnswer = "no";
+            break;
         }
     }
     return ["Question" => $number, "Correct" => $correctAnswer];

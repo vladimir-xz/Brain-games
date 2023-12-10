@@ -10,12 +10,12 @@ use BrainGames\Interaction;
 $gameType = "Evengame";
 $playerName = Cli\askForName();
 [$playersScore, $ifContinue] = Interaction\setScore();
-Interaction\gameBegining($gameType);
+Interaction\startGame($gameType);
 while ($ifContinue && $playersScore < 3) {
-    $gameData = Even\askIfEven($playerName);
-    $correctAnswer = $gameData["Correct"];
-    $Number = $gameData["Number"];
-    $answer = Interaction\getAnswer($Number);
+    $questionAndCorrectAnswer = Even\getEvenNumberAndAnswer($playerName);
+    $correctAnswer = $questionAndCorrectAnswer["Correct"];
+    $Number = $questionAndCorrectAnswer["Number"];
+    $answer = Interaction\askAnswer($Number);
     $gameResult = Interaction\checkIfCorrect($answer, $correctAnswer, $playersScore);
     $ifContinue = $gameResult["Status"];
     $playersScore = $gameResult["Score"];

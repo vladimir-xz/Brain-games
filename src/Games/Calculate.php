@@ -2,7 +2,7 @@
 
 namespace BrainGames\Games\Calculate;
 
-function equation()
+function getEquationAndAnswer()
 {
     $firstNumber = rand(1, 10);
     $secondNumber = rand(1, 10);

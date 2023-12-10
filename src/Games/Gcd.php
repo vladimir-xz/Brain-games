@@ -2,7 +2,7 @@
 
 namespace BrainGames\Games\Gcd;
 
-function findDivisor()
+function getQuestionAndDivisor()
 {
     $firstNumber = rand(1, 100);
     $secondNumber = rand(1, 100);

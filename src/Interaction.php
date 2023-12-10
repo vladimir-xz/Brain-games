@@ -10,7 +10,7 @@ function setScore()
     return [0, true];
 }
 
-function gameBegining(string $gameType)
+function startGame(string $gameType)
 {
     switch ($gameType) {
         case 'Evengame':
@@ -31,7 +31,7 @@ function gameBegining(string $gameType)
     }
 }
 
-function getAnswer(string $question)
+function askAnswer(string $question)
 {
     line("Question: %s", $question);
     $answer = prompt("Your answer is ");

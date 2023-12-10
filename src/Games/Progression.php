@@ -4,18 +4,18 @@ namespace BrainGames\Games\Progression;
 
 function findMissingNumber()
 {
-    $amountOfNumbers = rand(5, 10);
-    $missingNumber = rand(1, $amountOfNumbers);
-    $currentNumber = rand(1, 50);
+    $NumberCount = rand(5, 10);
+    $missingPosition = rand(1, $NumberCount);
+    $number = rand(1, 50);
     $addingNumber = rand(1, 10);
     $progression = [];
-    $progression[] = $currentNumber;
-    for ($i = 1; $i < $amountOfNumbers; $i++) {
-        $currentNumber = $currentNumber + $addingNumber;
-        $progression[] = $currentNumber;
+    $progression[] = $number;
+    for ($i = 1; $i < $NumberCount; $i++) {
+        $number = $number + $addingNumber;
+        $progression[] = $number;
     }
-    $answer = $progression[$missingNumber - 1];
-    $progression[$missingNumber - 1] = "..";
+    $answer = $progression[$missingPosition - 1];
+    $progression[$missingPosition - 1] = "..";
     $question = implode(" ", $progression);
     return ["Question" => $question, "Correct" => $answer];
 }
