@@ -2,7 +2,7 @@
 
 namespace BrainGames\Games\Even;
 
-function askIfEven($playersName)
+function askIfEven()
 {
     $randomNumber = rand(1, 100);
     $ifRandomIsEven = $randomNumber % 2 === 0;

@@ -10,7 +10,7 @@ function setScore()
     return [0, true];
 }
 
-function gameBegining($gameType)
+function gameBegining(string $gameType)
 {
     switch ($gameType) {
         case 'Evengame':
@@ -31,14 +31,14 @@ function gameBegining($gameType)
     }
 }
 
-function getAnswer($question)
+function getAnswer(string $question)
 {
     line("Question: %s", $question);
     $answer = prompt("Your answer is ");
     return $answer;
 }
 
-function checkIfCorrect($answer, $correctAnswer, $gamePoints)
+function checkIfCorrect(string $answer, string $correctAnswer, int $gamePoints)
 {
     $ifContinue = false;
     if ($answer == $correctAnswer) {
@@ -49,7 +49,7 @@ function checkIfCorrect($answer, $correctAnswer, $gamePoints)
     return ["Status" => $ifContinue, "Score" => $gamePoints];
 }
 
-function endGame($gamePoints, $playerName, $answer, $correctAnswer)
+function endGame(int $gamePoints, string $playerName, string $answer, string $correctAnswer)
 {
     if ($gamePoints === 3) {
         line("Congratulations, %s!", ucfirst($playerName));
