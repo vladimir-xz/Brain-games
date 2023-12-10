@@ -9,3 +9,5 @@ https://asciinema.org/a/vdTPtSKU20G05c5oIUqSL3Noq - Calculate
 https://asciinema.org/a/mF3R5ky1QR1m9nqnrdNQNnrVE - Gcd
 
 https://asciinema.org/a/zCFB9LgmYjlaWPgRguxrKTNfT - Progression
+
+https://asciinema.org/a/7Y6wXKX5ufLQ2PS4TG6KGxrlK - Prime
