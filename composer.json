@@ -10,7 +10,8 @@
             "src/Games/Even.php",
             "src/Games/Calculate.php",
             "src/Interaction.php",
-            "src/Games/Gcd.php"
+            "src/Games/Gcd.php",
+            "src/Games/Progression.php"
         ]
     },
     "authors": [
@@ -23,7 +24,8 @@
         "bin/brain-games",
         "bin/brain-even",
         "bin/brain-calc",
-        "bin/brain-gcd"
+        "bin/brain-gcd",
+        "bin/brain-progression"
     ],
     "require": {
         "wp-cli/php-cli-tools": "^0.11.21"
