@@ -6,7 +6,7 @@ function findIfPrime()
 {
     $number = rand(2, 100);
     $correctAnswer = "yes";
-    $controlGroup = [2, 3, 5];
+    $controlGroup = [2, 3, 5, 7];
     if (in_array($number, $controlGroup)) {
         return ["Question" => $number, "Correct" => $correctAnswer];
     }
