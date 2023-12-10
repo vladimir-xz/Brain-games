@@ -15,7 +15,7 @@
 <li><em>Missing number in progression: What number is missing in the progression?</em></li>
 <li><em>Prime number: Answer "yes" if given number is prime. Otherwise answer "no".</em></li>
 </ol>
-<p>Three attempt only</p>
+<p>Three attempts only</p>
 <h3>Version:</h3>
 <p>1.0.0</p>
 
