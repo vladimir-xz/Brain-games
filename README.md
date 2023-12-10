@@ -5,7 +5,7 @@
 <h1>Brain Games</h1>
 <h3>by Vovan</h3>
 
-<h2>Instruction:<h2>
+<h2>Instruction:</h2>
 <p>Download this git repository, open "php-project-45" directory and type in command line "make install". After that you can play included games.</p>
 
 <p>Commands to each game:</p>
