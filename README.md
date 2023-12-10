@@ -9,12 +9,13 @@
 
 <p>5 games on your choise:</p>
 <ol>
-<li><em>Even number: if the number is even, otherwise answer</em></li>
+<li><em>Even number: answer, if the number is even or not.</em></li>
 <li><em>Calculate: You need to write, what is the result of the expression?</em></li>
-<li><em>Greatest common divisor: Find the greatest common divisor of given numbers</em></li>
+<li><em>Greatest common divisor: Find the greatest common divisor of given numbers.</em></li>
 <li><em>Missing number in progression: What number is missing in the progression?</em></li>
 <li><em>Prime number: Answer "yes" if given number is prime. Otherwise answer "no".</em></li>
 </ol>
+<p>Three attempt only</p>
 <h3>Version:</h3>
 <p>1.0.0</p>
 
@@ -37,6 +38,7 @@
 </ol>
 
 
+<p>Video footages:</p>
 <ol> 
 <ul><li><a href="https://asciinema.org/a/ZouwUVNYbJeL8zEu4r2UsdMH8">Even game recording</a>.</li>
 
