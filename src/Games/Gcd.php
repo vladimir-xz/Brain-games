@@ -6,13 +6,13 @@ function findDivisor()
 {
     $firstNumber = rand(1, 100);
     $secondNumber = rand(1, 100);
-    $commomDivisor = 1;
+    $commonDivisor = 1;
     $numbers = [$firstNumber, $secondNumber];
     sort($numbers);
-    for ($i = 1; $i <= $numbers[0]; $i += $commomDivisor) {
+    for ($i = 1; $i <= $numbers[0]; $i += $commonDivisor) {
         if ($firstNumber % $i === 0 && $secondNumber % $i === 0) {
-            $commomDivisor = $i;
+            $commonDivisor = $i;
         }
     }
-    return ["Question" => "{$firstNumber} {$secondNumber}", "Correct" => $commomDivisor];
+    return ["Question" => "{$firstNumber} {$secondNumber}", "Correct" => $commonDivisor];
 }
