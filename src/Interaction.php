@@ -25,6 +25,9 @@ function gameBegining($gameType)
         case 'Progression':
             line("What number is missing in the progression?");
             break;
+        case 'Prime':
+            line("Answer \"yes\" if given number is prime. Otherwise answer \"no\".");
+            break;
     }
 }
 
