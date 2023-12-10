@@ -8,19 +8,19 @@ use function cli\prompt;
 function gameBegining($gameType)
 {
     switch ($gameType) {
-        case 'evengame':
+        case 'Evengame':
             line("Answer \"yes\" if the number is even, otherwise answer \"no\"");
             break;
-        case 'calculator':
+        case 'Calculate':
             line("What is the result of the expression?");
             break;
-        case 'gcd':
+        case 'Gcd':
             line("Find the greatest common divisor of given numbers.");
             break;
     }
 }
 
-function questionAndAnswer($question)
+function getAnswer($question)
 {
     line("Question: %s", $question);
     $answer = prompt("Your answer is ");

@@ -7,10 +7,10 @@
         },
         "files": [
             "src/Cli.php",
-            "src/Games/EvenGame.php",
-            "src/Games/CalculateGame.php",
+            "src/Games/Even.php",
+            "src/Games/Calculate.php",
             "src/Interaction.php",
-            "src/Games/GcdGame.php"
+            "src/Games/Gcd.php"
         ]
     },
     "authors": [

@@ -7,16 +7,16 @@ use BrainGames\Cli;
 use BrainGames\Games\Calculate;
 use BrainGames\Interaction;
 
-$gameType = "calculator";
+$gameType = "Calculate";
 $playerName = Cli\askForName();
 $playersScore = 0;
 $ifContinue = true;
 Interaction\gameBegining($gameType);
 while ($ifContinue && $playersScore < 3) {
-    $equationAndResult = Calculate\equation();
-    $correctAnswer = $equationAndResult["Correct"];
-    $question = $equationAndResult["Question"];
-    $answer = Interaction\questionAndAnswer($question);
+    $gameData = Calculate\equation();
+    $correctAnswer = $gameData["Correct"];
+    $question = $gameData["Question"];
+    $answer = Interaction\getAnswer($question);
     $gameResult = Interaction\checkIfCorrect($answer, $correctAnswer, $playersScore);
     $ifContinue = $gameResult["Status"];
     $playersScore = $gameResult["Score"];

@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use BrainGames\Cli;
+use BrainGames\Games\Calculate;
+use BrainGames\Interaction;
+
+
+$gameType = "Calculate";
+$playerName = Cli\askForName();
+$playersScore = 0;
+$ifContinue = true;
+
