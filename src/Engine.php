@@ -55,7 +55,7 @@ function askAnswer(string $question)
     return $answer;
 }
 
-function checkAnswer($answer, $correctAnswer, $gamePoint)
+function checkAnswer(int $answer, int $correctAnswer, int $gamePoint)
 {
     $ifContinue = true;
     if ($answer == $correctAnswer) {
@@ -67,7 +67,7 @@ function checkAnswer($answer, $correctAnswer, $gamePoint)
     return ["Status" => $ifContinue, "Point" => $gamePoint];
 }
 
-function run($gameType)
+function run(string $gameType)
 {
     $name = Cli\askForName();
     [$gamePoint, $ifContinue] = setGameData();
