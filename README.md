@@ -56,5 +56,7 @@
 <li><a href="https://asciinema.org/a/W0jIMRfxlXYk1SVGpismh1vwK">Prime game recording</a>.</li></ul>
 </ol>
 
+<p>BrainGame Calculate</p>
+
 [![asciicast](https://asciinema.org/a/Dsq2kNjc1Vi0fMawA2YSf6aRH.svg)](https://asciinema.org/a/Dsq2kNjc1Vi0fMawA2YSf6aRH)
  
