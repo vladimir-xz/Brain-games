@@ -69,6 +69,7 @@ function checkAnswer(string $answer, string $correctAnswer, int $gamePoint)
 
 function run(string $gameType)
 {
+    $gameObjective = 0;
     $name = Cli\askForName();
     [$gamePoint, $ifContinue] = setGameData();
     startGame($gameType);
