@@ -40,9 +40,11 @@
 
 <p>Video footages:</p>
 <ol> 
-<ul><li><a href="https://asciinema.org/a/ZouwUVNYbJeL8zEu4r2UsdMH8">Even game recording</a>.</li>
+<ul><li>Even game recording.</li>
+[![asciicast](https://asciinema.org/a/Dsq2kNjc1Vi0fMawA2YSf6aRH.svg)](https://asciinema.org/a/Dsq2kNjc1Vi0fMawA2YSf6aRH)
 
-<li><a href="https://asciinema.org/a/6nPNIhLQn5A90mlBUv3sRlEjc">Calculate game recording</a>.</li>
+<li>Calculate game recording.</li>
+[![asciicast](https://asciinema.org/a/Dsq2kNjc1Vi0fMawA2YSf6aRH.svg)](https://asciinema.org/a/Dsq2kNjc1Vi0fMawA2YSf6aRH)
 
 <li><a href="https://asciinema.org/a/G22BJf9UqWAOoi7tWUmEohUxV">Gcd game recording</a>.</li>
 
