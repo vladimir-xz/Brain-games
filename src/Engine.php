@@ -69,29 +69,30 @@ function checkAnswer(string $answer, string $correctAnswer, int $gamePoint)
 
 function run(string $gameType)
 {
+    $gameObjective = 0;
     $name = Cli\askForName();
     [$gamePoint, $ifContinue] = setGameData();
     startGame($gameType);
     while ($ifContinue && $gamePoint < 3) {
         switch ($gameType) {
             case 'Progression':
-                $gameEquation = Progression\findMissingNumber();
+                $gameObjective = Progression\findMissingNumber();
                 break;
             case 'Prime':
-                $gameEquation = Prime\getQuestionAndIfPrime();
+                $gameObjective = Prime\getQuestionAndIfPrime();
                 break;
             case 'Calculate':
-                $gameEquation = Calculate\getEquationAndAnswer();
+                $gameObjective = Calculate\getEquationAndAnswer();
                 break;
             case 'Even':
-                $gameEquation = Even\getEvenNumberAndAnswer();
+                $gameObjective = Even\getEvenNumberAndAnswer();
                 break;
             case 'Gcd':
-                $gameEquation = Gcd\getQuestionAndDivisor();
+                $gameObjective = Gcd\getQuestionAndDivisor();
                 break;
         }
-        $question = $gameEquation["Question"];
-        $correctAnswer = $gameEquation["Correct"];
+        $question = $gameObjective["Question"];
+        $correctAnswer = $gameObjective["Correct"];
         $answer = askAnswer($question);
         $gameResult = checkAnswer($answer, $correctAnswer, $gamePoint);
         $gamePoint = $gameResult["Point"];
