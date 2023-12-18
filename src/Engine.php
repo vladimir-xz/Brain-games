@@ -73,7 +73,7 @@ function run(string $gameType)
     $name = Cli\askForName();
     [$gamePoint, $ifContinue] = setGameData();
     startGame($gameType);
-    while ($ifContinue && $gamePoint < 3) {
+    do {
         switch ($gameType) {
             case 'Progression':
                 $gameObjective = Progression\findMissingNumber();
@@ -97,6 +97,6 @@ function run(string $gameType)
         $gameResult = checkAnswer($answer, $correctAnswer, $gamePoint);
         $gamePoint = $gameResult["Point"];
         $ifContinue = $gameResult["Status"];
-    }
+    } while ($ifContinue && $gamePoint < 3);
     endGame($gamePoint, $name, $answer, $correctAnswer);
 }
