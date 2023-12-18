@@ -10,5 +10,5 @@ function getEvenNumberAndAnswer()
     if ($ifRandomIsEven === true) {
         $correctAnswer = "yes";
     }
-    return ["Number" => $randomNumber, "Correct" => $correctAnswer];
+    return ["Question" => $randomNumber, "Correct" => $correctAnswer];
 }

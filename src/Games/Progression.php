@@ -4,13 +4,13 @@ namespace BrainGames\Games\Progression;
 
 function findMissingNumber()
 {
-    $NumberCount = rand(5, 10);
-    $missingPosition = rand(1, $NumberCount);
+    $numberCount = rand(5, 10);
+    $missingPosition = rand(1, $numberCount);
     $number = rand(1, 50);
     $addingNumber = rand(1, 10);
     $progression = [];
     $progression[] = $number;
-    for ($i = 1; $i < $NumberCount; $i++) {
+    for ($i = 1; $i < $numberCount; $i++) {
         $number = $number + $addingNumber;
         $progression[] = $number;
     }

@@ -3,21 +3,6 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use BrainGames\Cli;
-use BrainGames\Games\Calculate;
-use BrainGames\Interaction;
+use BrainGames\Engine;
 
-$gameType = "Calculate";
-$playerName = Cli\askForName();
-[$playersScore, $ifContinue] = Interaction\setInitailData();
-Interaction\startGame($gameType);
-while ($ifContinue && $playersScore < 3) {
-    $questionAndCorrectAnswer = Calculate\getEquationAndAnswer();
-    $correctAnswer = $questionAndCorrectAnswer["Correct"];
-    $question = $questionAndCorrectAnswer["Question"];
-    $answer = Interaction\askAnswer($question);
-    $gameResult = Interaction\checkIfCorrect($answer, $correctAnswer, $playersScore);
-    $ifContinue = $gameResult["Status"];
-    $playersScore = $gameResult["Score"];
-}
-Interaction\endGame($playersScore, $playerName, $answer, $correctAnswer);
+Engine\run("Calculate");

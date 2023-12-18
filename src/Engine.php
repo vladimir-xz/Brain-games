@@ -20,7 +20,7 @@ function setGameData()
 function startGame(string $gameType)
 {
     switch ($gameType) {
-        case 'Evengame':
+        case 'Even':
             line("Answer \"yes\" if the number is even, otherwise answer \"no\".");
             break;
         case 'Calculate':
