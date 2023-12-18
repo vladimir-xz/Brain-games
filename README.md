@@ -41,7 +41,6 @@
 
 <p>Video footages:</p>
 <h3>BrainGame Calculate</h3>
-[![asciicast](https://asciinema.org/a/Dsq2kNjc1Vi0fMawA2YSf6aRH.svg)](https://asciinema.org/a/Dsq2kNjc1Vi0fMawA2YSf6aRH)
 
 <ol> 
 <ul><li>Even game recording.</li>
@@ -56,4 +55,6 @@
 
 <li><a href="https://asciinema.org/a/W0jIMRfxlXYk1SVGpismh1vwK">Prime game recording</a>.</li></ul>
 </ol>
+
+[![asciicast](https://asciinema.org/a/Dsq2kNjc1Vi0fMawA2YSf6aRH.svg)](https://asciinema.org/a/Dsq2kNjc1Vi0fMawA2YSf6aRH)
  
