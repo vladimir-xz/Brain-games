@@ -2,14 +2,10 @@
     "name": "hexlet/code",
     "description": "First project",
     "autoload": {
-        "psr-4": {
-            "Hexlet\\Code\\": "src/"
-        },
         "files": [
             "src/Cli.php",
             "src/Games/Even.php",
             "src/Games/Calculate.php",
-            "src/Interaction.php",
             "src/Games/Gcd.php",
             "src/Games/Progression.php",
             "src/Games/Prime.php",
