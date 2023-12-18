@@ -38,16 +38,28 @@
 </ol>
 
 
-<p>Video footages:</p>
-<ol> 
-<ul><li><a href="https://asciinema.org/a/ZouwUVNYbJeL8zEu4r2UsdMH8">Even game recording</a>.</li>
+<h4>Video footages:</h4>
 
-<li><a href="https://asciinema.org/a/6nPNIhLQn5A90mlBUv3sRlEjc">Calculate game recording</a>.</li>
+<p>BrainGame instalation nad greetings</p>
 
-<li><a href="https://asciinema.org/a/G22BJf9UqWAOoi7tWUmEohUxV">Gcd game recording</a>.</li>
+[![asciicast](https://asciinema.org/a/dbIhcTf5T00aLdok5mCzKU0Cj.svg)](https://asciinema.org/a/dbIhcTf5T00aLdok5mCzKU0Cj)
 
-<li><a href="https://asciinema.org/a/GdoWnbhyEeoM2uOuflxkFtRXi">Progression game recording</a>.</li>
+<p>BrainGame Calculate</p>
 
-<li><a href="https://asciinema.org/a/W0jIMRfxlXYk1SVGpismh1vwK">Prime game recording</a>.</li></ul>
-</ol>
+[![asciicast](https://asciinema.org/a/Dsq2kNjc1Vi0fMawA2YSf6aRH.svg)](https://asciinema.org/a/Dsq2kNjc1Vi0fMawA2YSf6aRH)
+
+<p>BrainGame If Even</p>
+
+[![asciicast](https://asciinema.org/a/uA5ZuF10GUvxF12WGSBOEPxPB.svg)](https://asciinema.org/a/uA5ZuF10GUvxF12WGSBOEPxPB)
+
+<p>BrainGame Great Common Devisor </p>
+
+[![asciicast](https://asciinema.org/a/4g58FIpRdtDNpgmhNOPVPEeQk.svg)](https://asciinema.org/a/4g58FIpRdtDNpgmhNOPVPEeQk)
  
+<p>BrainGame Prime Number </p>
+
+[![asciicast](https://asciinema.org/a/cVYkJJsNWjhswVxSXkGcK6FOZ.svg)](https://asciinema.org/a/cVYkJJsNWjhswVxSXkGcK6FOZ)
+
+<p>BrainGame Progression </p>
+
+[![asciicast](https://asciinema.org/a/YAuWy70AQKS6pvrOr87IrgewE.svg)](https://asciinema.org/a/YAuWy70AQKS6pvrOr87IrgewE)
