@@ -55,7 +55,7 @@ function askAnswer(string $question)
     return $answer;
 }
 
-function checkAnswer(int $answer, int $correctAnswer, int $gamePoint)
+function checkAnswer(string $answer, string $correctAnswer, int $gamePoint)
 {
     $ifContinue = true;
     if ($answer == $correctAnswer) {
