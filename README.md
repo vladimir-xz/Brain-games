@@ -1,7 +1,6 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/vladimr-xz/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/vladimr-xz/php-project-45/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/202d3101c6c9f93522f9/maintainability)](https://codeclimate.com/github/vladimr-xz/php-project-45/maintainability)
-[![asciicast](https://asciinema.org/a/Dsq2kNjc1Vi0fMawA2YSf6aRH.svg)](https://asciinema.org/a/Dsq2kNjc1Vi0fMawA2YSf6aRH)
 
 <h1>Brain Games</h1>
 <h3>by Vovan</h3>
@@ -39,24 +38,29 @@
 </ol>
 
 
-<p>Video footages:</p>
-<h3>BrainGame Calculate</h3>
+<h4>Video footages:</h4>
 
-<ol> 
-<ul><li>Even game recording.</li>
-[![asciicast](https://asciinema.org/a/Dsq2kNjc1Vi0fMawA2YSf6aRH.svg)](https://asciinema.org/a/Dsq2kNjc1Vi0fMawA2YSf6aRH)
+<p>BrainGame instalation nad greetings</p>
 
-<li>Calculate game recording.[![asciicast](https://asciinema.org/a/Dsq2kNjc1Vi0fMawA2YSf6aRH.svg)](https://asciinema.org/a/Dsq2kNjc1Vi0fMawA2YSf6aRH)</li>
-[![asciicast](https://asciinema.org/a/Dsq2kNjc1Vi0fMawA2YSf6aRH.svg)](https://asciinema.org/a/Dsq2kNjc1Vi0fMawA2YSf6aRH)
-
-<li><a href="https://asciinema.org/a/G22BJf9UqWAOoi7tWUmEohUxV">Gcd game recording</a>.</li>
-
-<li><a href="https://asciinema.org/a/GdoWnbhyEeoM2uOuflxkFtRXi">Progression game recording</a>.</li>
-
-<li><a href="https://asciinema.org/a/W0jIMRfxlXYk1SVGpismh1vwK">Prime game recording</a>.</li></ul>
-</ol>
+[![asciicast](https://asciinema.org/a/dbIhcTf5T00aLdok5mCzKU0Cj.svg)](https://asciinema.org/a/dbIhcTf5T00aLdok5mCzKU0Cj)
 
 <p>BrainGame Calculate</p>
 
 [![asciicast](https://asciinema.org/a/Dsq2kNjc1Vi0fMawA2YSf6aRH.svg)](https://asciinema.org/a/Dsq2kNjc1Vi0fMawA2YSf6aRH)
+
+<p>BrainGame If Even</p>
+
+[![asciicast](https://asciinema.org/a/uA5ZuF10GUvxF12WGSBOEPxPB.svg)](https://asciinema.org/a/uA5ZuF10GUvxF12WGSBOEPxPB)
+
+<p>BrainGame Great Common Devisor (GCD) </p>
+
+[![asciicast](https://asciinema.org/a/4g58FIpRdtDNpgmhNOPVPEeQk.svg)](https://asciinema.org/a/4g58FIpRdtDNpgmhNOPVPEeQk)
  
+<p>BrainGame Prime Number (GCD) </p>
+
+[![asciicast](https://asciinema.org/a/cVYkJJsNWjhswVxSXkGcK6FOZ.svg)](https://asciinema.org/a/cVYkJJsNWjhswVxSXkGcK6FOZ)
+
+<p>BrainGame Progression (GCD) </p>
+
+[![asciicast](https://asciinema.org/a/YAuWy70AQKS6pvrOr87IrgewE.svg)](https://asciinema.org/a/YAuWy70AQKS6pvrOr87IrgewE)
+[![asciicast](https://asciinema.org/a/cVYkJJsNWjhswVxSXkGcK6FOZ.svg)](https://asciinema.org/a/cVYkJJsNWjhswVxSXkGcK6FOZ)
