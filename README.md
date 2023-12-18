@@ -63,4 +63,3 @@
 <p>BrainGame Progression (GCD) </p>
 
 [![asciicast](https://asciinema.org/a/YAuWy70AQKS6pvrOr87IrgewE.svg)](https://asciinema.org/a/YAuWy70AQKS6pvrOr87IrgewE)
-[![asciicast](https://asciinema.org/a/cVYkJJsNWjhswVxSXkGcK6FOZ.svg)](https://asciinema.org/a/cVYkJJsNWjhswVxSXkGcK6FOZ)
