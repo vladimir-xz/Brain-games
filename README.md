@@ -1,6 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/vladimr-xz/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/vladimr-xz/php-project-45/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/202d3101c6c9f93522f9/maintainability)](https://codeclimate.com/github/vladimr-xz/php-project-45/maintainability)
+[![asciicast](https://asciinema.org/a/Dsq2kNjc1Vi0fMawA2YSf6aRH.svg)](https://asciinema.org/a/Dsq2kNjc1Vi0fMawA2YSf6aRH)
 
 <h1>Brain Games</h1>
 <h3>by Vovan</h3>
