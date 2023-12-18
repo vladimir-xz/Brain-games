@@ -52,14 +52,14 @@
 
 [![asciicast](https://asciinema.org/a/uA5ZuF10GUvxF12WGSBOEPxPB.svg)](https://asciinema.org/a/uA5ZuF10GUvxF12WGSBOEPxPB)
 
-<p>BrainGame Great Common Devisor (GCD) </p>
+<p>BrainGame Great Common Devisor </p>
 
 [![asciicast](https://asciinema.org/a/4g58FIpRdtDNpgmhNOPVPEeQk.svg)](https://asciinema.org/a/4g58FIpRdtDNpgmhNOPVPEeQk)
  
-<p>BrainGame Prime Number (GCD) </p>
+<p>BrainGame Prime Number </p>
 
 [![asciicast](https://asciinema.org/a/cVYkJJsNWjhswVxSXkGcK6FOZ.svg)](https://asciinema.org/a/cVYkJJsNWjhswVxSXkGcK6FOZ)
 
-<p>BrainGame Progression (GCD) </p>
+<p>BrainGame Progression </p>
 
 [![asciicast](https://asciinema.org/a/YAuWy70AQKS6pvrOr87IrgewE.svg)](https://asciinema.org/a/YAuWy70AQKS6pvrOr87IrgewE)
