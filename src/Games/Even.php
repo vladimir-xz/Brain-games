@@ -7,7 +7,7 @@ use BrainGames\Engine;
 
 use function cli\line;
 
-function getEvenNumberAndAnswer()
+function getEvenNumberAndResult()
 {
     $randomNumber = rand(1, 100);
     $ifRandomIsEven = $randomNumber % 2 === 0;
@@ -21,12 +21,10 @@ function getEvenNumberAndAnswer()
 function run()
 {
     $name = Cli\askForName();
-    [$gameScore, $gameGoal] = Engine\setGameData();
+    ["Score" => $gameScore, "Goal" => $gameGoal] = Engine\setGameData();
     line("Answer \"yes\" if the number is even, otherwise answer \"no\".");
     do {
-        $gameTaskAndAnswer = getEvenNumberAndAnswer();
-        $question = $gameTaskAndAnswer["Question"];
-        $correctAnswer = $gameTaskAndAnswer["Correct"];
+        ["Question" => $question, "Correct" => $correctAnswer] = getEvenNumberAndResult();
         $ifContinue = Engine\processGame($name, $question, $correctAnswer, $gameScore, $gameGoal);
     } while ($ifContinue);
 }

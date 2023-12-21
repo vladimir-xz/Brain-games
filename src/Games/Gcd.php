@@ -27,12 +27,10 @@ function getQuestionAndDivisor()
 function run()
 {
     $name = Cli\askForName();
-    [$gameScore, $gameGoal] = Engine\setGameData();
+    ["Score" => $gameScore, "Goal" => $gameGoal] = Engine\setGameData();
     line("Find the greatest common divisor of given numbers.");
     do {
-        $gameTaskAndAnswer = getQuestionAndDivisor();
-        $question = $gameTaskAndAnswer["Question"];
-        $correctAnswer = $gameTaskAndAnswer["Correct"];
+        ["Question" => $question, "Correct" => $correctAnswer] = getQuestionAndDivisor();
         $ifContinue = Engine\processGame($name, $question, $correctAnswer, $gameScore, $gameGoal);
     } while ($ifContinue);
 }

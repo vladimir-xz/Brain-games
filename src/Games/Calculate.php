@@ -7,7 +7,7 @@ use BrainGames\Engine;
 
 use function cli\line;
 
-function getEquationAndAnswer()
+function getEquationAndResult()
 {
     $firstNumber = rand(1, 10);
     $secondNumber = rand(1, 10);
@@ -31,12 +31,10 @@ function getEquationAndAnswer()
 function run()
 {
     $name = Cli\askForName();
-    [$gameScore, $gameGoal] = Engine\setGameData();
+    ["Score" => $gameScore, "Goal" => $gameGoal] = Engine\setGameData();
     line("What is the result of the expression?");
     do {
-        $gameTaskAndAnswer = getEquationAndAnswer();
-        $question = $gameTaskAndAnswer["Question"];
-        $correctAnswer = $gameTaskAndAnswer["Correct"];
+        ["Question" => $question, "Correct" => $correctAnswer] = getEquationAndResult();
         $ifContinue = Engine\processGame($name, $question, $correctAnswer, $gameScore, $gameGoal);
     } while ($ifContinue);
 }

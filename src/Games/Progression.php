@@ -7,7 +7,7 @@ use BrainGames\Engine;
 
 use function cli\line;
 
-function findMissingNumber()
+function getProgressionAndNumber()
 {
     $numberCount = rand(5, 10);
     $missingPosition = rand(1, $numberCount);
@@ -28,12 +28,10 @@ function findMissingNumber()
 function run()
 {
     $name = Cli\askForName();
-    [$gameScore, $gameGoal] = Engine\setGameData();
+    ["Score" => $gameScore, "Goal" => $gameGoal] = Engine\setGameData();
     line("What number is missing in the progression?");
     do {
-        $gameTaskAndAnswer = findMissingNumber();
-        $question = $gameTaskAndAnswer["Question"];
-        $correctAnswer = $gameTaskAndAnswer["Correct"];
+        ["Question" => $question, "Correct" => $correctAnswer] = getProgressionAndNumber();
         $ifContinue = Engine\processGame($name, $question, $correctAnswer, $gameScore, $gameGoal);
     } while ($ifContinue);
 }

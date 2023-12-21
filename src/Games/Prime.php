@@ -27,12 +27,10 @@ function getQuestionAndIfPrime()
 function run()
 {
     $name = Cli\askForName();
-    [$gameScore, $gameGoal] = Engine\setGameData();
+    ["Score" => $gameScore, "Goal" => $gameGoal] = Engine\setGameData();
     line("Answer \"yes\" if given number is prime. Otherwise answer \"no\".");
     do {
-        $gameTaskAndAnswer = getQuestionAndIfPrime();
-        $question = $gameTaskAndAnswer["Question"];
-        $correctAnswer = $gameTaskAndAnswer["Correct"];
+        ["Question" => $question, "Correct" => $correctAnswer] = getQuestionAndIfPrime();
         $ifContinue = Engine\processGame($name, $question, $correctAnswer, $gameScore, $gameGoal);
     } while ($ifContinue);
 }
