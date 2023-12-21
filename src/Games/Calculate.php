@@ -2,6 +2,11 @@
 
 namespace BrainGames\Games\Calculate;
 
+use BrainGames\Cli;
+use BrainGames\Engine;
+
+use function cli\line;
+
 function getEquationAndAnswer()
 {
     $firstNumber = rand(1, 10);
@@ -24,4 +29,17 @@ function getEquationAndAnswer()
             break;
     }
     return ["Question" => $question, "Correct" => $correctAnswer];
+}
+
+function run()
+{
+    $name = Cli\askForName();
+    [$gameScore, $gameGoal] = Engine\setGameData();
+    line("What is the result of the expression?");
+    do {
+        $gameTaskAndAnswer = getEquationAndAnswer();
+        $question = $gameTaskAndAnswer["Question"];
+        $correctAnswer = $gameTaskAndAnswer["Correct"];
+        $ifContinue = Engine\processGame($name, $question, $correctAnswer, $gameScore, $gameGoal);
+    } while ($ifContinue);
 }
