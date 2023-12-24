@@ -27,6 +27,7 @@ function getEquationAndResult()
             break;
         default:
             print_r("Unknown order state: \"{choosenSign}\"!");
+            $correctAnswer = 0;
     }
     return ["Question" => $question, "Correct" => $correctAnswer];
 }
