@@ -12,7 +12,8 @@ function getEquationAndResult()
     $firstNumber = rand(1, 10);
     $secondNumber = rand(1, 10);
     $signs = ["+", "-", "*"];
-    $choosenSign = $signs[rand(0, 2)];
+    $signsCount = count($signs) - 1;
+    $choosenSign = $signs[rand(0, $signsCount)];
     $question = implode(' ', [$firstNumber, $choosenSign, $secondNumber]);
     switch ($choosenSign) {
         case '+':
@@ -24,6 +25,8 @@ function getEquationAndResult()
         case '*':
             $correctAnswer = $firstNumber * $secondNumber;
             break;
+        default:
+            print_r(`Unknown order state: "{choosenSign}"!`);
     }
     return ["Question" => $question, "Correct" => $correctAnswer];
 }
@@ -31,10 +34,10 @@ function getEquationAndResult()
 function run()
 {
     $name = Cli\askForName();
-    ["Score" => $gameScore, "Goal" => $gameGoal] = Engine\setGameData();
+    $gameRounds = Engine\getGameRounds();
+    for ($i = 0; $i < $gameRounds; $i++) {
+        $questionsAndAnswers[] = getEquationAndResult();
+    }
     line("What is the result of the expression?");
-    do {
-        ["Question" => $question, "Correct" => $correctAnswer] = getEquationAndResult();
-        $ifContinue = Engine\processGame($name, $question, $correctAnswer, $gameScore, $gameGoal);
-    } while ($ifContinue);
+    Engine\processGame($name, $questionsAndAnswers);
 }

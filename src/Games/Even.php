@@ -11,20 +11,17 @@ function getEvenNumberAndResult()
 {
     $randomNumber = rand(1, 100);
     $ifRandomIsEven = $randomNumber % 2 === 0;
-    $correctAnswer = "no";
-    if ($ifRandomIsEven === true) {
-        $correctAnswer = "yes";
-    }
+    $ifRandomIsEven === true ? $correctAnswer = "yes" : $correctAnswer = "no";
     return ["Question" => $randomNumber, "Correct" => $correctAnswer];
 }
 
 function run()
 {
     $name = Cli\askForName();
-    ["Score" => $gameScore, "Goal" => $gameGoal] = Engine\setGameData();
+    $gameRounds = Engine\getGameRounds();
+    for ($i = 0; $i < $gameRounds; $i++) {
+        $questionsAndAnswers[] = getEvenNumberAndResult();
+    }
     line("Answer \"yes\" if the number is even, otherwise answer \"no\".");
-    do {
-        ["Question" => $question, "Correct" => $correctAnswer] = getEvenNumberAndResult();
-        $ifContinue = Engine\processGame($name, $question, $correctAnswer, $gameScore, $gameGoal);
-    } while ($ifContinue);
+    Engine\processGame($name, $questionsAndAnswers);
 }
