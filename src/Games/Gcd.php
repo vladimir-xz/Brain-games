@@ -28,6 +28,7 @@ function run()
 {
     $name = Cli\askForName();
     $gameRounds = Engine\getGameRounds();
+    $questionsAndAnswers = [];
     for ($i = 0; $i < $gameRounds; $i++) {
         $questionsAndAnswers[] = getQuestionAndDivisor();
     }
