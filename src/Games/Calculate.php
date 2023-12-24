@@ -26,7 +26,7 @@ function getEquationAndResult()
             $correctAnswer = $firstNumber * $secondNumber;
             break;
         default:
-            print_r(`Unknown order state: "{choosenSign}"!`);
+            print_r("Unknown order state: \"{choosenSign}\"!");
     }
     return ["Question" => $question, "Correct" => $correctAnswer];
 }

@@ -19,8 +19,7 @@ function processGame(string $playerName, array $questionsAndAnswers)
             line("Correct!");
         } else {
             line("'%s' is wrong answer ;(. Correct answer was '%s'.", $answer, $correctAnswer);
-            line("Let's try again, %s!", ucfirst($playerName));
-            return true;
+            return line("Let's try again, %s!", ucfirst($playerName));
         }
     }
     line("Congratulations, %s!", ucfirst($playerName));
