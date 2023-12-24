@@ -7,22 +7,12 @@ use BrainGames\Engine;
 
 use function cli\line;
 
-function getControlNumbers()
-{
-    $number = rand(2, 100);
-    in_array($number, [2, 3, 5, 7], true) ? $correctAnswer = "yes" : $correctAnswer = "no";
-    return ["Question" => $number, "Correct" => $correctAnswer];
-}
-
 function getQuestionAndIfPrime()
 {
-    ["Question" => $number, "Correct" => $correctAnswer] = getControlNumbers();
-    if ($correctAnswer === "no") {
-        $controlNumbers = [2, 3, 5, 7];
-        foreach ($controlNumbers as $controlNumber) {
-            if ($number % $controlNumber === 0) {
-                return ["Question" => $number, "Correct" => $correctAnswer];
-            }
+    $number = rand(2, 100);
+    for ($i = 2; $i <= $number / 2; $i++) {
+        if ($number % $i === 0) {
+            return ["Question" => $number, "Correct" => "no"];
         }
     }
     return ["Question" => $number, "Correct" => "yes"];
