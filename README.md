@@ -42,24 +42,24 @@
 
 <p>BrainGame instalation nad greetings</p>
 
-[![asciicast](https://asciinema.org/a/dbIhcTf5T00aLdok5mCzKU0Cj.svg)](https://asciinema.org/a/dbIhcTf5T00aLdok5mCzKU0Cj)
+[![asciicast](https://asciinema.org/a/BKBEKCvj5NNHFtgsLIvdmtwUc.svg)](https://asciinema.org/a/BKBEKCvj5NNHFtgsLIvdmtwUc)
 
 <p>BrainGame Calculate</p>
 
-[![asciicast](https://asciinema.org/a/Dsq2kNjc1Vi0fMawA2YSf6aRH.svg)](https://asciinema.org/a/Dsq2kNjc1Vi0fMawA2YSf6aRH)
+[![asciicast](https://asciinema.org/a/xu02nAbTdMlCLGpXOdiwkLEAi.svg)](https://asciinema.org/a/xu02nAbTdMlCLGpXOdiwkLEAi)
 
 <p>BrainGame If Even</p>
 
-[![asciicast](https://asciinema.org/a/uA5ZuF10GUvxF12WGSBOEPxPB.svg)](https://asciinema.org/a/uA5ZuF10GUvxF12WGSBOEPxPB)
+[![asciicast](https://asciinema.org/a/cbLlfqZkBLvisJzeDVKvbkadN.svg)](https://asciinema.org/a/cbLlfqZkBLvisJzeDVKvbkadN)
 
 <p>BrainGame Great Common Devisor </p>
 
-[![asciicast](https://asciinema.org/a/4g58FIpRdtDNpgmhNOPVPEeQk.svg)](https://asciinema.org/a/4g58FIpRdtDNpgmhNOPVPEeQk)
+[![asciicast](https://asciinema.org/a/09iXXU7lPYIpqh4r0J5sfb5k8.svg)](https://asciinema.org/a/09iXXU7lPYIpqh4r0J5sfb5k8)
  
 <p>BrainGame Prime Number </p>
 
-[![asciicast](https://asciinema.org/a/cVYkJJsNWjhswVxSXkGcK6FOZ.svg)](https://asciinema.org/a/cVYkJJsNWjhswVxSXkGcK6FOZ)
+[![asciicast](https://asciinema.org/a/LJtgVJlRXCcm5sbdnkNx5YpO1.svg)](https://asciinema.org/a/LJtgVJlRXCcm5sbdnkNx5YpO1)
 
 <p>BrainGame Progression </p>
 
-[![asciicast](https://asciinema.org/a/YAuWy70AQKS6pvrOr87IrgewE.svg)](https://asciinema.org/a/YAuWy70AQKS6pvrOr87IrgewE)
+[![asciicast](https://asciinema.org/a/h24O7qLFuowtKGkm2CUkgKwet.svg)](https://asciinema.org/a/h24O7qLFuowtKGkm2CUkgKwet)
