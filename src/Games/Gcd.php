@@ -32,6 +32,6 @@ function run()
     for ($i = 0; $i < $gameRounds; $i++) {
         $questionsAndAnswers[] = getQuestionAndDivisor();
     }
-    line("Find the greatest common divisor of given numbers.");
+    Engine\printRules("Gcd");
     Engine\processGame($name, $questionsAndAnswers);
 }

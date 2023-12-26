@@ -11,7 +11,7 @@ function getEvenNumberAndResult()
 {
     $randomNumber = rand(1, 100);
     $ifRandomIsEven = $randomNumber % 2 === 0;
-    $ifRandomIsEven === true ? $correctAnswer = "yes" : $correctAnswer = "no";
+    $correctAnswer = $ifRandomIsEven ? "yes" : "no";
     return ["Question" => $randomNumber, "Correct" => $correctAnswer];
 }
 
@@ -23,6 +23,6 @@ function run()
     for ($i = 0; $i < $gameRounds; $i++) {
         $questionsAndAnswers[] = getEvenNumberAndResult();
     }
-    line("Answer \"yes\" if the number is even, otherwise answer \"no\".");
+    Engine\printRules("Even");
     Engine\processGame($name, $questionsAndAnswers);
 }

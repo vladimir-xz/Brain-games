@@ -26,8 +26,7 @@ function getEquationAndResult()
             $correctAnswer = $firstNumber * $secondNumber;
             break;
         default:
-            print_r("Unknown order state: \"{choosenSign}\"!");
-            $correctAnswer = 0;
+            throw new \Exception("Unknown order state: \"{$choosenSign}\"!");
     }
     return ["Question" => $question, "Correct" => $correctAnswer];
 }
@@ -40,6 +39,6 @@ function run()
     for ($i = 0; $i < $gameRounds; $i++) {
         $questionsAndAnswers[] = getEquationAndResult();
     }
-    line("What is the result of the expression?");
+    Engine\printRules("Calculate");
     Engine\processGame($name, $questionsAndAnswers);
 }
