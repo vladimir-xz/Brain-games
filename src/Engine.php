@@ -38,12 +38,11 @@ function processGame(string $playerName, array $questionsAndAnswers)
     foreach ($questionsAndAnswers as ["Question" => $question, "Correct" => $correctAnswer]) {
         line("Question: %s", $question);
         $answer = prompt("Your answer is ");
-        if (mb_strtolower($answer) == $correctAnswer) {
-            line("Correct!");
-        } else {
+        if (mb_strtolower($answer) != $correctAnswer) {
             line("'%s' is wrong answer ;(. Correct answer was '%s'.", $answer, $correctAnswer);
             return line("Let's try again, %s!", ucfirst($playerName));
         }
+        line("Correct!");
     }
     line("Congratulations, %s!", ucfirst($playerName));
 }
