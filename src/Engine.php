@@ -10,7 +10,7 @@ function getGameRounds()
     return 3;
 }
 
-function printRules($gameType)
+function printRules(string $gameType)
 {
     switch ($gameType) {
         case 'Even':
