@@ -2,10 +2,7 @@
 
 namespace BrainGames\Games\Calculate;
 
-use BrainGames\Cli;
 use BrainGames\Engine;
-
-use function cli\line;
 
 function getEquationAndResult()
 {
