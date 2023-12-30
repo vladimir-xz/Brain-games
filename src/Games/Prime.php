@@ -26,9 +26,9 @@ function getQuestionAndIfPrime()
 
 function run()
 {
-    $gameRounds = Engine\getGameRounds();
+    $gameRoundCount = Engine\getGameRounds();
     $questionsAndAnswers = [];
-    for ($i = 0; $i < $gameRounds; $i++) {
+    for ($i = 0; $i < $gameRoundCount; $i++) {
         $questionsAndAnswers[] = getQuestionAndIfPrime();
     }
     $gameRule = "Answer \"yes\" if given number is prime. Otherwise answer \"no\".";

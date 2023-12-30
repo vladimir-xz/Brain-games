@@ -23,9 +23,9 @@ function getProgressionAndNumber()
 
 function run()
 {
-    $gameRounds = Engine\getGameRounds();
+    $gameRoundCount = Engine\getGameRounds();
     $questionsAndAnswers = [];
-    for ($i = 0; $i < $gameRounds; $i++) {
+    for ($i = 0; $i < $gameRoundCount; $i++) {
         $questionsAndAnswers[] = getProgressionAndNumber();
     }
     $gameRule = "What number is missing in the progression?";
