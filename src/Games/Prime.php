@@ -29,12 +29,11 @@ function getQuestionAndIfPrime()
 
 function run()
 {
-    $name = Cli\askForName();
     $gameRounds = Engine\getGameRounds();
     $questionsAndAnswers = [];
     for ($i = 0; $i < $gameRounds; $i++) {
         $questionsAndAnswers[] = getQuestionAndIfPrime();
     }
-    Engine\printRules("Prime");
-    Engine\processGame($name, $questionsAndAnswers);
+    $gameType = "Answer \"yes\" if given number is prime. Otherwise answer \"no\".";
+    Engine\processGame($gameType, $questionsAndAnswers);
 }

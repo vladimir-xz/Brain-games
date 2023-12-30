@@ -33,12 +33,11 @@ function getEquationAndResult()
 
 function run()
 {
-    $name = Cli\askForName();
     $gameRounds = Engine\getGameRounds();
     $questionsAndAnswers = [];
     for ($i = 0; $i < $gameRounds; $i++) {
         $questionsAndAnswers[] = getEquationAndResult();
     }
-    Engine\printRules("Calculate");
-    Engine\processGame($name, $questionsAndAnswers);
+    $gameType = "What is the result of the expression?";
+    Engine\processGame($gameType, $questionsAndAnswers);
 }

@@ -14,10 +14,9 @@ function getProgressionAndNumber()
     $number = rand(1, 50);
     $addingNumber = rand(1, 10);
     $progression = [];
-    $progression[] = $number;
-    for ($i = 1; $i < $numberCount; $i++) {
-        $number = $number + $addingNumber;
+    for ($i = 0; $i < $numberCount; $i++) {
         $progression[] = $number;
+        $number = $number + $addingNumber;
     }
     $answer = $progression[$missingPosition];
     $progression[$missingPosition] = "..";
@@ -27,12 +26,11 @@ function getProgressionAndNumber()
 
 function run()
 {
-    $name = Cli\askForName();
     $gameRounds = Engine\getGameRounds();
     $questionsAndAnswers = [];
     for ($i = 0; $i < $gameRounds; $i++) {
         $questionsAndAnswers[] = getProgressionAndNumber();
     }
-    Engine\printRules("Progression");
-    Engine\processGame($name, $questionsAndAnswers);
+    $gameType = "What number is missing in the progression?";
+    Engine\processGame($gameType, $questionsAndAnswers);
 }

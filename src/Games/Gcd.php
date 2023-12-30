@@ -14,8 +14,7 @@ function getQuestionAndDivisor()
     $commonDivisor = 1;
     $numbers = [$firstNumber, $secondNumber];
     $question = implode(' ', $numbers);
-    sort($numbers);
-    for ($i = $numbers[0]; $i >= 1; $i -= 1) {
+    for ($i = min($numbers); $i >= 1; $i--) {
         if ($firstNumber % $i === 0 && $secondNumber % $i === 0) {
             $commonDivisor = $i;
             break;
@@ -26,12 +25,11 @@ function getQuestionAndDivisor()
 
 function run()
 {
-    $name = Cli\askForName();
     $gameRounds = Engine\getGameRounds();
     $questionsAndAnswers = [];
     for ($i = 0; $i < $gameRounds; $i++) {
         $questionsAndAnswers[] = getQuestionAndDivisor();
     }
-    Engine\printRules("Gcd");
-    Engine\processGame($name, $questionsAndAnswers);
+    $gameType = "Find the greatest common divisor of given numbers.";
+    Engine\processGame($gameType, $questionsAndAnswers);
 }

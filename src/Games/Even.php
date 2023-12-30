@@ -17,12 +17,11 @@ function getEvenNumberAndResult()
 
 function run()
 {
-    $name = Cli\askForName();
     $gameRounds = Engine\getGameRounds();
     $questionsAndAnswers = [];
     for ($i = 0; $i < $gameRounds; $i++) {
         $questionsAndAnswers[] = getEvenNumberAndResult();
     }
-    Engine\printRules("Even");
-    Engine\processGame($name, $questionsAndAnswers);
+    $gameType = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
+    Engine\processGame($gameType, $questionsAndAnswers);
 }
