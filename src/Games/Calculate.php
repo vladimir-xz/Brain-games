@@ -35,6 +35,6 @@ function run()
     for ($i = 0; $i < $gameRounds; $i++) {
         $questionsAndAnswers[] = getEquationAndResult();
     }
-    $gameType = "What is the result of the expression?";
-    Engine\processGame($gameType, $questionsAndAnswers);
+    $gameRule = "What is the result of the expression?";
+    Engine\processGame($gameRule, $questionsAndAnswers);
 }

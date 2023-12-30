@@ -28,6 +28,6 @@ function run()
     for ($i = 0; $i < $gameRounds; $i++) {
         $questionsAndAnswers[] = getProgressionAndNumber();
     }
-    $gameType = "What number is missing in the progression?";
-    Engine\processGame($gameType, $questionsAndAnswers);
+    $gameRule = "What number is missing in the progression?";
+    Engine\processGame($gameRule, $questionsAndAnswers);
 }

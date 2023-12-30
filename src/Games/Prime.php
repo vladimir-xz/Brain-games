@@ -31,6 +31,6 @@ function run()
     for ($i = 0; $i < $gameRounds; $i++) {
         $questionsAndAnswers[] = getQuestionAndIfPrime();
     }
-    $gameType = "Answer \"yes\" if given number is prime. Otherwise answer \"no\".";
-    Engine\processGame($gameType, $questionsAndAnswers);
+    $gameRule = "Answer \"yes\" if given number is prime. Otherwise answer \"no\".";
+    Engine\processGame($gameRule, $questionsAndAnswers);
 }

@@ -12,10 +12,10 @@ function getGameRounds()
     return 3;
 }
 
-function processGame(string $gameType, array $questionsAndAnswers)
+function processGame(string $gameRule, array $questionsAndAnswers)
 {
     $playerName = Cli\askForName();
-    line($gameType);
+    line($gameRule);
     foreach ($questionsAndAnswers as ["Question" => $question, "Correct" => $correctAnswer]) {
         line("Question: %s", $question);
         $answer = prompt("Your answer is ");

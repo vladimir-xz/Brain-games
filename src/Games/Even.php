@@ -19,6 +19,6 @@ function run()
     for ($i = 0; $i < $gameRounds; $i++) {
         $questionsAndAnswers[] = getEvenNumberAndResult();
     }
-    $gameType = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
-    Engine\processGame($gameType, $questionsAndAnswers);
+    $gameRule = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
+    Engine\processGame($gameRule, $questionsAndAnswers);
 }
