@@ -7,7 +7,7 @@
 
 <h2>Description:</h2>
 
-<p>5 games on your choise:</p>
+<p>5 simple number-based games on your choise:</p>
 <ol>
 <li><em>Even number: answer, if the number is even or not.</em></li>
 <li><em>Calculate: You need to write, what is the result of the expression?</em></li>
